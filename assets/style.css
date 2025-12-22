@@ -1,5 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --primary-color: #222222;
+    --seconday-color: #ffffff;
+    --font-family: "Ubuntu", sans-serif;
+    --site-width: 1240px;
+    --site-spacing: 20px;
+    --intersection-spacing: 60px;
+    --intersection-spacing-mobile: 40px;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container{
+    max-width: var(--site-width);
+    padding-inline: var(--site-spacing);
+    margin-inline: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+p, li, a, span, strong{
+   font-family: var(--font-family);
+}
+
+
+/* Header Section Style Start's Here */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding-block: 1.25rem;
+}
+
+.header .site-logo img{
+    width: 6.5rem;
+    height: auto;
+}
+
+.header nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  column-gap: 2.5rem;
+}
+
+.header nav .theme-mode{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: .75rem;
+}
+
+.header nav .theme-mode img{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.header nav .theme-mode img:last-child{
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.header nav ul{
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.header .hamburger-menu{
+    display: none;
 }
