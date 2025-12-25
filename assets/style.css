@@ -31,6 +31,16 @@ p, li, a, span, strong{
    font-family: var(--font-family);
 }
 
+h1{
+    font-size: 2.75rem;
+    line-height: 1.15;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 0.01rem;
+}
 
 /* Header Section Style Start's Here */
 
@@ -43,7 +53,7 @@ p, li, a, span, strong{
 }
 
 .header .site-logo img{
-    width: 6.5rem;
+    width: 6rem;
     height: auto;
 }
 
@@ -71,6 +81,7 @@ p, li, a, span, strong{
 .header nav .theme-mode img:last-child{
     width: 1.75rem;
     height: 1.75rem;
+    display: none;
 }
 
 .header nav ul{
@@ -89,4 +100,30 @@ p, li, a, span, strong{
 
 .header .hamburger-menu{
     display: none;
+}
+
+/*Hero Section Style Start's Here */
+
+.hero-section{
+    padding-block-end: var(--intersection-spacing);
+}
+
+.hero-section .content-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23.96875rem, 1fr));
+    column-gap: 3.5rem;
+    align-items: center;
+}
+
+.hero-profile img{
+    width: 34.375em;
+    height: auto;
+}
+
+.hero-content{
+    max-width: 34.375em;
+}
+
+.hero-content p{
+    margin-block-start: .75rem;
 }
