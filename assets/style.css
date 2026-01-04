@@ -9,6 +9,7 @@
     --site-spacing: 20px;
     --intersection-spacing: 60px;
     --intersection-spacing-mobile: 40px;
+    --transtions: all .6s ease;;
 }
 
 body{
@@ -33,9 +34,14 @@ h1, h2, h3, h4, h5, h6{
     color: var(--tertiary-color);
 }
 
-p, li, a, span, strong{
+p, li, span, strong{
    font-family: var(--font-family);
    color: var(--tertiary-color);
+}
+
+a{
+    font-family: var(--font-family);
+    color: var(--seconday-color);
 }
 
 h1{
@@ -48,6 +54,24 @@ p{
     font-size: 1.2rem;
     line-height: 1.5;
     letter-spacing: 0.01rem;
+}
+
+#primary-button{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    background-color: var(--seconday-color);
+    color: var(--primary-color);
+    padding-inline: 1.5rem;
+    padding-block: .75rem;
+    border-radius: 3rem;
+    margin-block-start: 1.75rem;
+    transition: var(--transtions);
+}
+
+#primary-button:hover{
+    transform: scale(1.075);
 }
 
 /* Header Section Style Start's Here */
@@ -107,10 +131,20 @@ p{
     color: var(--tertiary-color);
     font-weight: 500;
     font-size: 1.1rem;
+    transition: var(--transtions);
+}
+
+.header nav ul li a:hover{
+    color: var(--seconday-color);
 }
 
 .header .hamburger-menu{
     display: none;
+}
+
+.header .hamburger-menu img{
+    width: 1.75rem;
+    height: auto;
 }
 
 /*Hero Section Style Start's Here */
@@ -127,12 +161,31 @@ p{
 }
 
 .hero-profile img{
-    width: 34.375em;
+    max-width: 34.375rem;
+    width: 100%;
     height: auto;
 }
 
 .hero-content{
     max-width: 34.375rem;
+}
+
+.social-media-icons{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    flex-flow: row nowrap;
+    margin-block-start: 2rem;
+}
+
+.social-media-icons img{
+    width: 1.75rem;
+    height: 1.75rem;
+    transition: var(--transtions);
+}
+
+.social-media-icons img:hover{
+    transform: scale(1.25);
 }
 
 .hero-content p{

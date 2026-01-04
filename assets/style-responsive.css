@@ -1,0 +1,17 @@
+/* Large Screen Responsive Breakpoint */
+@media screen and (max-width: 62rem){
+    .header nav{
+        display: none;
+    }
+
+    .header .hamburger-menu{
+        display: block;
+    }
+}
+
+/* Medium Screen Responsive Breakpoint */
+@media screen and (max-width: 48rem){
+    .hero-section .content-wrapper{
+       row-gap: 2.75rem;
+   }
+}
