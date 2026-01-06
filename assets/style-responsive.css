@@ -8,7 +8,7 @@
         display: block;
     }
 
-    .hero-section .content-wrapper{
+    .content-wrapper{
        row-gap: 2rem;
        grid-template-columns: repeat(1, 1fr);
    }
@@ -25,6 +25,11 @@
 
 /* Medium Screen Responsive Breakpoint */
 @media screen and (max-width: 48rem){
+    :root{
+        --site-spacing: 20px;
+        --intersection-spacing: 40px;
+    }
+
     .hero-section .content-wrapper{
        row-gap: 1.5rem;
    }

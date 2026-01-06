@@ -7,9 +7,7 @@
     --font-family: "Poppins", sans-serif;
     --site-width: 1240px;
     --site-spacing: 40px;
-    --site-spacing-mobile: 20px;
-    --intersection-spacing: 80px;
-    --intersection-spacing-mobile: 60px;
+    --intersection-spacing: 60px;
     --transtions: all .6s ease;;
 }
 
@@ -51,10 +49,20 @@ h1{
     letter-spacing: -0.075rem;
 }
 
+h2{
+    font-size: 2.5rem;
+    line-height: 1.15;
+    letter-spacing: -0.075rem;
+}
+
 p{
     font-size: 1.2rem;
     line-height: 1.5;
     letter-spacing: 0.01rem;
+}
+
+.para-spacing{
+    margin-block-start: 0.5rem;
 }
 
 #primary-button{
@@ -73,6 +81,13 @@ p{
 
 #primary-button:hover{
     transform: scale(1.075);
+}
+
+.content-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.5rem;
+    align-items: center;
 }
 
 /* Header Section Style Start's Here */
@@ -157,13 +172,6 @@ p{
     align-items: center;
 }
 
-.hero-section .content-wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3.5rem;
-    align-items: center;
-}
-
 .hero-profile img{
     max-width: 34.375rem;
     width: 100%;
@@ -194,4 +202,20 @@ p{
 
 .hero-content p{
     margin-block-start: .75rem;
+}
+
+/* About Me Section Style Start's Here */
+
+.about-me-section{
+    padding-block-end: var(--intersection-spacing);
+}
+
+.about-me-image img{
+    max-width: 34.375rem;
+    width: 100%;
+    height: auto;
+}
+
+.about-me-content h2{
+    margin-block-end: 0.75rem;
 }
