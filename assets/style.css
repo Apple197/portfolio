@@ -6,9 +6,10 @@
     --tertiary-color: #ffffff;
     --font-family: "Poppins", sans-serif;
     --site-width: 1240px;
-    --site-spacing: 20px;
-    --intersection-spacing: 60px;
-    --intersection-spacing-mobile: 40px;
+    --site-spacing: 40px;
+    --site-spacing-mobile: 20px;
+    --intersection-spacing: 80px;
+    --intersection-spacing-mobile: 60px;
     --transtions: all .6s ease;;
 }
 
@@ -151,11 +152,14 @@ p{
 
 .hero-section{
     padding-block-end: var(--intersection-spacing);
+    min-height: calc(100dvh - 5.409375rem);
+    display: grid;
+    align-items: center;
 }
 
 .hero-section .content-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23.96875rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 3.5rem;
     align-items: center;
 }
