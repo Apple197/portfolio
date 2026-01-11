@@ -1,36 +1,78 @@
 /* Large Screen Responsive Breakpoint */
-@media screen and (max-width: 62rem){
-    .header nav{
-        display: none;
-    }
+@media screen and (max-width: 62rem) {
+  .header nav {
+    display: none;
+  }
 
-    .header .hamburger-menu{
-        display: block;
-    }
+  .header .hamburger-menu {
+    display: block;
+  }
 
-    .content-wrapper{
-       row-gap: 2rem;
-       grid-template-columns: repeat(1, 1fr);
-   }
+  .content-wrapper {
+    row-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-   .hero-content{
-     max-width: 100%;
-     order: 1;
-   }
-
-   .hero-profile img{
+  .hero-content {
     max-width: 100%;
-   }
+    order: 1;
+  }
+
+  .hero-profile img {
+    max-width: 100%;
+  }
 }
 
 /* Medium Screen Responsive Breakpoint */
-@media screen and (max-width: 48rem){
-    :root{
-        --site-spacing: 20px;
-        --intersection-spacing: 40px;
-    }
+@media screen and (max-width: 48rem) {
+  :root {
+    --site-spacing: 20px;
+    --intersection-spacing: 40px;
+    --skill-progress-grid: 5.625rem;
+  }
 
-    .hero-section .content-wrapper{
-       row-gap: 1.5rem;
-   }
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .hero-section .content-wrapper {
+    row-gap: 1.5rem;
+  }
+
+  .my-skills-section .my-skills-wrapper {
+    gap: 1.06rem;
+  }
+
+  .skills-progress-bar {
+    width: 90px;
+    height: 90px;
+    justify-self: center;
+  }
+
+  .progress-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skills-progress-bar .progress-circle img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .my-certificates-section h3 {
+    margin-block-end: 2.5rem;
+  }
+
+  .my-certificates-wrapper .certificate-card {
+    padding: 1.75rem;
+  }
 }

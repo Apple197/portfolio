@@ -10,6 +10,7 @@
   --intersection-spacing: 60px;
   --transtions: all 0.6s ease;
   --progress: 0%;
+  --skill-progress-grid: 10rem;
 }
 
 body {
@@ -58,7 +59,8 @@ h1 {
   letter-spacing: -0.075rem;
 }
 
-h2 {
+h2,
+h3 {
   font-size: 2.5rem;
   line-height: 1.15;
   letter-spacing: -0.075rem;
@@ -231,10 +233,30 @@ p {
 
 /* Skills Section Style Start's Here */
 
+.my-skills-section {
+  padding-block: var(--intersection-spacing);
+}
+
+.my-skills-section h3 {
+  margin-block-end: 2.5rem;
+  text-align: center;
+}
+
+.my-skills-section .my-skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--skill-progress-grid), 1fr)
+  );
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.75rem;
+}
+
 .skills-progress-bar {
   position: relative;
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   background-color: transparent;
   z-index: 1;
   display: grid;
@@ -257,8 +279,8 @@ p {
 }
 
 .progress-circle {
-  width: 135px;
-  height: 135px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background-color: var(--primary-color);
   display: grid;
@@ -266,12 +288,116 @@ p {
 }
 
 .skills-progress-bar .progress-circle img {
-  width: 90px;
-  height: 90px;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
 }
 
 .skills-progress-bar:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 12px 25px rgba(255, 255, 255, 0.25);
+}
+
+/* My Certificates Section Style Start's Here */
+
+.my-certificates-section {
+  padding-block: var(--intersection-spacing);
+}
+
+.my-certificates-section h3 {
+  margin-block-end: 3rem;
+  text-align: center;
+}
+
+.my-certificates-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-flow: row wrap;
+}
+
+.my-certificates-wrapper .certificate-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.25rem;
+  border-radius: 0.95rem;
+  transition: var(--transtions);
+  background-color: transparent;
+  flex-grow: 1;
+  flex-basis: 18rem;
+}
+
+.my-certificates-wrapper .certificate-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+
+.my-certificates-wrapper .certificate-card h4 {
+  font-size: 1.45rem;
+  margin-block-start: 1.25rem;
+  margin-block-end: 0.25rem;
+  line-height: 1.2;
+}
+
+/* My Project Section Style Start's Here */
+.my-projects-section {
+  padding-block: var(--intersection-spacing);
+}
+
+.my-projects-section h2 {
+  text-align: center;
+}
+
+.my-projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.25rem;
+  margin-block-start: 2.5rem;
+}
+
+.my-projects-wrapper .project-card {
+  flex-grow: 1;
+  flex-basis: 18rem;
+  background-color: transparent;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.95rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: var(--transtions);
+}
+
+.my-projects-wrapper .project-card img {
+  width: 100%;
+  border-radius: 0.9rem;
+  margin-block-end: 1.25rem;
+  transition: var(--transtions);
+}
+
+.my-projects-wrapper .project-card h4 {
+  font-size: 1.5rem;
+  margin-block-end: 0.25rem;
+  transition: var(--transtions);
+  line-height: 1.2;
+}
+
+.my-projects-wrapper .project-card p {
+  font-size: 1rem;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover h4 {
+  color: var(--seconday-color);
+}
+
+.project-card:hover img {
+  transform: scale(1.075) translateY(-0.3rem);
 }
