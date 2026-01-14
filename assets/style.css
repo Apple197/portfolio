@@ -43,7 +43,10 @@ h6 {
 p,
 li,
 span,
-strong {
+strong,
+textarea,
+input,
+button {
   font-family: var(--font-family);
   color: var(--tertiary-color);
 }
@@ -174,7 +177,7 @@ p {
   height: auto;
 }
 
-/*Hero Section Style Start's Here */
+/* Hero Section Style Start's Here */
 
 .hero-section {
   padding-block-end: var(--intersection-spacing);
@@ -188,7 +191,7 @@ p {
   width: 100%;
   height: auto;
   filter: drop-shadow(0 0 0 rgba(93, 255, 134, 0.75));
-  animation: pulse 1.8s infinite ease-out;
+  animation: pulse 2s infinite ease-out;
 }
 
 .hero-profile img:hover {
@@ -199,7 +202,13 @@ p {
   0% {
     filter: drop-shadow(0 0 0 rgba(93, 255, 134, 0.75));
   }
-  70% {
+  25% {
+    filter: drop-shadow(0 0 25px rgba(93, 255, 134, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 50px rgba(93, 255, 134, 0.25));
+  }
+  75% {
     filter: drop-shadow(0 0 75px rgba(93, 255, 134, 0));
   }
   100% {
@@ -418,4 +427,83 @@ p {
 
 .project-card:hover img {
   transform: scale(1.075) translateY(-0.3rem);
+}
+
+/*  Contact me Section Style Start's Here */
+
+.contact-me-section {
+  padding-block: var(--intersection-spacing);
+}
+
+.contact-me-section h2 {
+  text-align: center;
+}
+
+.contact-me-section form {
+  max-width: 34.0625rem;
+  margin-inline: auto;
+  margin-block-start: 1.25rem;
+}
+
+.contact-me-section form input,
+.contact-me-section form textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.9rem;
+  outline: none;
+  background-color: transparent;
+  padding: 1.5rem;
+  margin-block-start: 1rem;
+  font-size: 1rem;
+  transition: var(--transtions);
+}
+
+.contact-me-section form textarea {
+  resize: vertical;
+  min-height: 12.5rem;
+}
+
+.contact-me-section form #formSubmit {
+  margin-block-start: 1.25rem;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  border-radius: 3rem;
+  transition: var(--transtions);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.contact-me-section form #formSubmit::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--seconday-color);
+  width: 0%;
+  height: 100%;
+  transition: var(--transtions);
+  z-index: -1;
+}
+
+.contact-me-section form #formSubmit:hover::before {
+  width: 100%;
+}
+
+.contact-me-section form input:hover,
+.contact-me-section form textarea:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-me-section form input:focus,
+.contact-me-section form textarea:focus {
+  border-color: var(--seconday-color);
 }
