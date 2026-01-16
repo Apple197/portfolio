@@ -191,7 +191,7 @@ p {
   width: 100%;
   height: auto;
   filter: drop-shadow(0 0 0 rgba(93, 255, 134, 0.75));
-  animation: pulse 2s infinite ease-out;
+  animation: pulse 2s infinite ease-in-out;
 }
 
 .hero-profile img:hover {
@@ -506,4 +506,43 @@ p {
 .contact-me-section form input:focus,
 .contact-me-section form textarea:focus {
   border-color: var(--seconday-color);
+}
+
+/* Footer Section Style Start's Here */
+
+#footer .footer-content {
+  padding-block: 1.75rem;
+  border-top: 0.0625rem solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer .footer-content .social-media-icons {
+  margin-block-start: 0;
+}
+
+#footer .footer-content .contact-details {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  flex-flow: row nowrap;
+}
+
+#footer .footer-content .contact-details a {
+  font-size: 1.1rem;
+  display: block;
+  color: var(--tertiary-color);
+  text-decoration: none;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.25);
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  transition: var(--transtions);
+}
+
+#footer .footer-content .contact-details a:hover {
+  border: 0.0625rem solid var(--seconday-color);
+  color: var(--seconday-color);
+  transform: translateY(-0.375rem);
 }
