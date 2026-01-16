@@ -106,20 +106,25 @@ p {
 
 /* Header Section Style Start's Here */
 
-.header {
+#header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-flow: row nowrap;
   padding-block: 1.25rem;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0,0,0,0.25);
+  z-index: 10;
+  backdrop-filter: blur(20px);
 }
 
-.header .site-logo img {
+#header .site-logo img {
   width: 6rem;
   height: auto;
 }
 
-.header nav {
+#header nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,36 +132,36 @@ p {
   column-gap: 2.5rem;
 }
 
-.header nav .theme-mode {
+#header nav .theme-mode {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   column-gap: 0.75rem;
 }
 
-.header nav .theme-mode img {
+#header nav .theme-mode img {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
 }
 
-.header nav .theme-mode img:first-child {
+#header nav .theme-mode img:first-child {
   display: none;
 }
 
-.header nav .theme-mode img:last-child {
+#header nav .theme-mode img:last-child {
   width: 1.75rem;
   height: 1.75rem;
 }
 
-.header nav ul {
+#header nav ul {
   list-style-type: none;
   display: inline-flex;
   align-items: center;
   column-gap: 2.5rem;
 }
 
-.header nav ul li a {
+#header nav ul li a {
   text-decoration: none;
   color: var(--tertiary-color);
   font-weight: 500;
@@ -164,17 +169,18 @@ p {
   transition: var(--transtions);
 }
 
-.header nav ul li a:hover {
+#header nav ul li a:hover {
   color: var(--seconday-color);
 }
 
-.header .hamburger-menu {
+#header .hamburger-menu {
   display: none;
 }
 
-.header .hamburger-menu img {
+#header .hamburger-menu img {
   width: 1.5rem;
   height: auto;
+  transition: var(--transtions);
 }
 
 /* Hero Section Style Start's Here */
