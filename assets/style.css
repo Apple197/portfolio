@@ -173,7 +173,7 @@ p {
 }
 
 .header .hamburger-menu img {
-  width: 1.75rem;
+  width: 1.5rem;
   height: auto;
 }
 
@@ -516,6 +516,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-flow: row wrap;
+  column-gap: 5rem;
+  row-gap: 1.75rem;
 }
 
 #footer .footer-content .social-media-icons {
@@ -527,7 +530,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 0.75rem;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 
 #footer .footer-content .contact-details a {
