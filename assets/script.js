@@ -2,6 +2,7 @@ const menuButton = document.querySelector(".hamburger-menu");
 const body = document.querySelector("body");
 const isNavOpen = document.querySelector("#header nav");
 const themeToggleButtom = document.querySelector(".theme-mode");
+const form = document.querySelector("form");
 let isLightThemeActive = localStorage.getItem("theme-mode");
 
 // Navigation Menu Logic's Start Here
@@ -33,6 +34,12 @@ if (isLightThemeActive === "Light") {
 themeToggleButtom.addEventListener("click", () => {
   isLightThemeActive = localStorage.getItem("theme-mode");
   isLightThemeActive !== "Light" ? lightMode() : darkMode();
+});
+
+// Form Handler Logic's Start Here
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  event.target.reset();
 });
 
 // Lenis smooth scroll Logic's Start Here
