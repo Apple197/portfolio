@@ -1,637 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <link rel="stylesheet" href="assets/style-responsive.css" />
-    <title>My Portfolio</title>
-  </head>
 
-  <body>
-    <!-- Header Section Start's Here -->
-    <header class="container" id="header">
-      <div class="site-logo">
-        <img src="./assets/images/Nazrul_Hasan_Logo.webp" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords"
+    content="Nazrul Hasan, WordPress Developer, Portfolio, Web Developer, HTML, CSS, JavaScript, PHP, MySQL, Elementor, WooCommerce, LearnDash, Rank Math, Figma, Web Design, Web Development" />
+  <meta name="description" content="Nazrul Hasan is a skilled WordPress Developer with 4 years of experience">
+  <meta name="author" content="Nazrul Hasan">
+  <title>Nazrul Hasan | WordPress Developer Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/style-responsive.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+</head>
+
+<body>
+  <!-- Header Section Start's Here -->
+  <header class="container" id="header">
+    <div class="site-logo">
+      <a href="#Hero" onclick="lenis.scrollTo('#Hero')"><img src=" ./assets/images/Nazrul_Hasan_Logo.webp" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#Hero" onclick="lenis.scrollTo('#Hero')">Home</a></li>
+        <li><a href="#about-me" onclick="lenis.scrollTo('#about-me')">About</a></li>
+        <li><a href="#skills" onclick="lenis.scrollTo('#skills')">Skills</a></li>
+        <li><a href="#certificates" onclick="lenis.scrollTo('#certificates')">Certificates</a></li>
+        <li><a href="#projects" onclick="lenis.scrollTo('#projects')">Projects</a></li>
+        <li><a href="#contact" onclick="lenis.scrollTo('#contact')">Contact</a></li>
+      </ul>
+      <div class="theme-mode">
+        <img src="./assets/images/icons/sun.svg" alt="Sun Icon" />
+        <img src="./assets/images/icons/moon.svg" alt="Moon Icon" />
       </div>
-      <nav>
-        <ul>
-          <li><a href="#Hero">Home</a></li>
-          <li><a href="#about-me">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certificates">Certificates</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="theme-mode">
-          <img src="./assets/images/icons/sun.svg" alt="Sun Icon" />
-          <img src="./assets/images/icons/moon.svg" alt="Moon Icon" />
-        </div>
-      </nav>
-      <div class="hamburger-menu">
-        <img
-          src="./assets/images/icons/hamburger-menu.svg"
-          alt="Hamburger Menu Icon"
-        />
-        <img
-          src="./assets//images/icons/close-hamburger-menu.svg"
-          alt="Close Hamburger Menu Icon"
-        />
-      </div>
-    </header>
+    </nav>
+    <div class="hamburger-menu">
+      <img src="./assets/images/icons/hamburger-menu.svg" alt="Hamburger Menu Icon" />
+      <img src="./assets//images/icons/close-hamburger-menu.svg" alt="Close Hamburger Menu Icon" />
+    </div>
+  </header>
 
-    <main>
-      <!-- Introduction Section Start's Here -->
-      <section class="hero-section container" id="Hero">
-        <div class="content-wrapper">
-          <div class="hero-content">
-            <h1>Hello, I am Nazrul Hasan, a WordPress Developer.</h1>
-            <p>
-              I create simple and functional websites with clean layouts and
-              easy-to-use designs. I focus on building websites that work
-              properly and are easy to manage.
-            </p>
-            <div class="social-media-icons">
-              <a href="https://github.com/Apple197" target="_blank"
-                ><img src="./assets/images/icons/GitHub.svg"
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/nazrul-hasan/"
-                target="_blank"
-                ><img src="./assets/images/icons/Linkedin.svg"
-              /></a>
-              <a href="https://x.com/Nazrul_Hasan1" target="_blank"
-                ><img src="./assets/images/icons/X.svg"
-              /></a>
-            </div>
-            <a href="#" download="#" id="primary-button">Donwload CV</a>
+  <main>
+    <!-- Introduction Section Start's Here -->
+    <section class="hero-section container" id="Hero">
+      <div class="content-wrapper">
+        <div class="hero-content">
+          <h1>Hello, I am Nazrul Hasan, a WordPress Developer.</h1>
+          <p>
+            I create simple and functional websites with clean layouts and
+            easy-to-use designs. I focus on building websites that work
+            properly and are easy to manage.
+          </p>
+          <div class="social-media-icons">
+            <a href="https://github.com/Apple197" target="_blank"><img src="./assets/images/icons/GitHub.svg" /></a>
+            <a href="https://www.linkedin.com/in/nazrul-hasan/" target="_blank"><img
+                src="./assets/images/icons/Linkedin.svg" /></a>
+            <a href="https://x.com/Nazrul_Hasan1" target="_blank"><img src="./assets/images/icons/X.svg" /></a>
           </div>
-          <div class="hero-profile">
-            <img
-              src="./assets/images/Nazrul_Hasan.webp"
-              alt="Nazrul Hasan Profile Photo"
-            />
-          </div>
+          <a href="./assets/resume.pdf" download="./assets/resume.pdf" id="primary-button">Donwload CV</a>
         </div>
-      </section>
-
-      <!-- About Me Section Start's Here-->
-      <section class="about-me-section container" id="about-me">
-        <div class="content-wrapper">
-          <div class="about-me-image">
-            <img src="./assets/images/About_Me.webp" alt="Nazrul Hasan Pic" />
-          </div>
-          <div class="about-me-content">
-            <h2>About Me</h2>
-            <p>
-              I am a <strong>WordPress Developer</strong> with
-              <strong>4 years of experience</strong> in building and maintaining
-              WordPress websites. I also have
-              <strong
-                >6 months of experience in WordPress plugin development</strong
-              >, working on custom functionality and feature extensions.
-            </p>
-            <p class="para-spacing">
-              I focus on clean code, reliable implementation, and maintainable
-              solutions, with a strong understanding of WordPress best
-              practices.
-            </p>
-            <a href="#" download="#" id="primary-button">Read More</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- My Skills Section Start's Here -->
-      <section class="my-skills-section container" id="skills">
-        <h3>My Skills</h3>
-        <div class="my-skills-wrapper">
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 95%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/HTML.webp"
-                alt="HTML Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 80%"
-          >
-            <div class="progress-circle">
-              <img src="./assets/images/skills_logo/CSS.webp" alt="CSS Logo" />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 60%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/javaScript.webp"
-                alt="JavaScript Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 50%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/GSAP.webp"
-                alt="GSAP Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 45%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/MYSQL.webp"
-                alt="MySQL Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 65%"
-          >
-            <div class="progress-circle">
-              <img src="./assets/images/skills_logo/PHP.webp" alt="PHP Logo" />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 50%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/Rank_Math.webp"
-                alt="Rank Math Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 90%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/LearnDash.webp"
-                alt="LearnDash Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 85%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/Figma.webp"
-                alt="Figma Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 80%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/Woocommerce.webp"
-                alt="Woocommerce Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 80%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/Elementor.webp"
-                alt="Elementor Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 75%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/WordPress.webp"
-                alt="WordPress Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 25%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/Photoshop.webp"
-                alt="Photoshop Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 90%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/Learnworld.webp"
-                alt="Learnworld Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 60%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/Articulate.webp"
-                alt="Articulate Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 30%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/illustrator.webp"
-                alt="Illustrator Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 95%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/Powerpoint.webp"
-                alt="Powerpoint Logo"
-              />
-            </div>
-          </div>
-          <div
-            class="skills-progress-bar"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="60"
-            style="--progress: 80%"
-          >
-            <div class="progress-circle">
-              <img
-                src="./assets/images/skills_logo/excel.webp"
-                alt="Excel Logo"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- My Certificates Section Start's Here -->
-      <section class="my-certificates-section container" id="certificates">
-        <h3>My Certificates</h3>
-        <div class="my-certificates-wrapper">
-          <div class="certificate-card">
-            <img src="./assets/images/icons/HTML.svg" alt="HTML Icon" />
-            <h4>HTML Certification</h4>
-            <p>
-              Certification covering the fundamentals of HTML, including page
-              structure, semantic elements, forms, and basic web standards.
-            </p>
-            <a
-              href="./assets/certificates/HTML_certificate.pdf"
-              download="./assets/certificates/HTML_certificate.pdf"
-              target="_blank"
-              id="primary-button"
-              >View Certificate</a
-            >
-          </div>
-          <div class="certificate-card">
-            <img src="./assets/images/icons/CSS.svg" alt="CSS Icon" />
-            <h4>CSS Certification</h4>
-            <p>
-              Certification focused on styling web pages using CSS, including
-              layouts, responsive design basics, and visual presentation.
-            </p>
-            <a
-              href="./assets/certificates/CSS_certificate.pdf"
-              download="./assets/certificates/CSS_certificate.pdf"
-              target="_blank"
-              id="primary-button"
-              >View Certificate</a
-            >
-          </div>
-          <div class="certificate-card">
-            <img
-              src="./assets/images/icons/javaScript.svg"
-              alt="javaScript Icon"
-            />
-            <h4>JavaScript Certification</h4>
-            <p>
-              Certification covering JavaScript fundamentals such as variables,
-              functions, conditions, loops, and basic interactivity.
-            </p>
-            <a
-              href="./assets//certificates/JavaScript_certificate.pdf"
-              download="./assets/certificates/JavaScript_certificate.pdf"
-              target="_blank"
-              id="primary-button"
-              >View Certificate</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- My Project Section Start's Here -->
-      <section class="my-projects-section container" id="projects">
-        <h2>My Latest Projects</h2>
-        <div class="my-projects-wrapper">
-          <div class="project-card">
-            <div>
-              <img
-                src="./assets/images/projects/Fookhukka.com.webp"
-                alt="Fookhukka website hero section image"
-              />
-              <h4>Fookhukka</h4>
-              <p>
-                Discover premium, handcrafted hookahs designed to elevate every
-                moment.
-              </p>
-            </div>
-            <a href="https://fookhukka.com/" target="_blank" id="primary-button"
-              >View Project</a
-            >
-          </div>
-          <div class="project-card">
-            <div>
-              <img
-                src="./assets/images/projects/SlideSkills.com.webp"
-                alt="SlideSkills website hero section image"
-              />
-              <h4>SlideSkills</h4>
-              <p>
-                Presentation design experts for financial & consulting firms.
-              </p>
-            </div>
-            <a
-              href="https://slideskills.com/"
-              target="_blank"
-              id="primary-button"
-              >View Project</a
-            >
-          </div>
-          <div class="project-card">
-            <div>
-              <img
-                src="./assets/images/projects/NYparley.com.webp"
-                alt="NYparley website hero section image"
-              />
-              <h4>NYparley</h4>
-              <p>Canadian-based Business consulting and digital design firm</p>
-            </div>
-            <a href="https://nyparley.com/" target="_blank" id="primary-button"
-              >View Project</a
-            >
-          </div>
-          <div class="project-card">
-            <div>
-              <img
-                src="./assets/images/projects/Nfil3d.com.webp"
-                alt="Nfil3d hero section image"
-              />
-              <h4>Nfil3d</h4>
-              <p>N-Fil3D is a leading 3D printer manufacturer</p>
-            </div>
-            <a href="https://nfil3d.com/" target="_blank" id="primary-button"
-              >View Project</a
-            >
-          </div>
-          <div class="project-card">
-            <div>
-              <img
-                src="./assets/images/projects/brainboltconsulting.com.webp"
-                alt="Brain Bolt Consulting hero section image"
-              />
-              <h4>Brain Bolt Consulting</h4>
-              <p>
-                Brain Bolt Consulting provides strategic business solutions and
-                digital transformation services.
-              </p>
-            </div>
-            <a
-              href="https://brainboltconsulting.com/"
-              target="_blank"
-              id="primary-button"
-              >View Project</a
-            >
-          </div>
-          <div class="project-card">
-            <div>
-              <img
-                src="./assets/images/projects/staffdevelopmentsolutions.com.webp"
-                alt="Staff Development Solutions hero section image"
-              />
-              <h4>Staff Development Solutions</h4>
-              <p>
-                Staff Development Solutions partners with your healthcare
-                organization to solve the challenges
-              </p>
-            </div>
-            <a
-              href="https://staffdevelopmentsolutions.com/"
-              target="_blank"
-              id="primary-button"
-              >View Project</a
-            >
-          </div>
-          <div class="project-card">
-            <div>
-              <img
-                src="./assets/images/projects/morestudios.in.webp"
-                alt="Morestudios hero section image"
-              />
-              <h4>Morestudios</h4>
-              <p>
-                MoreStudios is one of the top video production houses in India
-              </p>
-            </div>
-            <a
-              href="https://morestudios.in/"
-              target="_blank"
-              id="primary-button"
-              >View Project</a
-            >
-          </div>
-          <div class="project-card">
-            <div>
-              <img
-                src="./assets/images/projects/morelearningsolutions.com.webp"
-                alt="morelearningsolutions hero section image"
-              />
-              <h4>Morelearningsolutions</h4>
-              <p>
-                MoreLearning combines deep expertise in learning and development
-              </p>
-            </div>
-            <a
-              href="https://morelearningsolutions.com/"
-              target="_blank"
-              id="primary-button"
-              >View Project</a
-            >
-          </div>
-          <div class="project-card">
-            <div>
-              <img
-                src="./assets/images/projects/moreslides.com.webp"
-                alt="Moreslides hero section image"
-              />
-              <h4>Moreslides</h4>
-              <p>Moreslides is a creative agency</p>
-            </div>
-            <a
-              href="https://moreslides-v2.netlify.app/"
-              target="_blank"
-              id="primary-button"
-              >View Project</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Form Section Start's Here -->
-      <section class="contact-me-section container" id="contact">
-        <h2>Contact Me</h2>
-        <form action="#" method="post">
-          <input
-            type="text"
-            name="full_name"
-            id="fullName"
-            required
-            placeholder="Nazrul Hasan"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            placeholder="nazrulhasan866@gmail.com"
-          />
-          <textarea
-            type="text"
-            name="message"
-            id="message"
-            placeholder="Hello, There How are you?"
-          ></textarea>
-          <button type="submit" id="formSubmit">Send Message</button>
-        </form>
-      </section>
-    </main>
-
-    <footer id="footer" class="container">
-      <div class="footer-content">
-        <div class="contact-details">
-          <a href="tel:9811808154">+919811808154</a>
-          <a href="mailto:nazrulhasan866@gmail.com">nazrulhasan866@gmail.com</a>
-        </div>
-        <div class="social-media-icons">
-          <a href="https://github.com/Apple197" target="_blank"
-            ><img src="./assets/images/icons/GitHub.svg"
-          /></a>
-          <a href="https://www.linkedin.com/in/nazrul-hasan/" target="_blank"
-            ><img src="./assets/images/icons/Linkedin.svg"
-          /></a>
-          <a href="https://x.com/Nazrul_Hasan1" target="_blank"
-            ><img src="./assets/images/icons/X.svg"
-          /></a>
+        <div class="hero-profile">
+          <img src="./assets/images/Nazrul_Hasan.webp" alt="Nazrul Hasan Profile Photo" />
         </div>
       </div>
-    </footer>
-    <script src="./assets/script.js"></script>
-  </body>
+    </section>
+
+    <!-- About Me Section Start's Here-->
+    <section class="about-me-section container" id="about-me">
+      <div class="content-wrapper">
+        <div class="about-me-image">
+          <img src="./assets/images/About_Me.webp" alt="Nazrul Hasan Pic" />
+        </div>
+        <div class="about-me-content">
+          <h2>About Me</h2>
+          <p>
+            I am a <strong>WordPress Developer</strong> with
+            <strong>4 years of experience</strong> in building and maintaining
+            WordPress websites. I also have
+            <strong>6 months of experience in WordPress plugin development</strong>, working on custom functionality and
+            feature extensions.
+          </p>
+          <p class="para-spacing">
+            I focus on clean code, reliable implementation, and maintainable
+            solutions, with a strong understanding of WordPress best
+            practices.
+          </p>
+          <a href="#" download="#" id="primary-button">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skills Section Start's Here -->
+    <section class="my-skills-section container" id="skills">
+      <h3>My Skills</h3>
+      <div class="my-skills-wrapper">
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 95%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/HTML.webp" alt="HTML Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 80%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/CSS.webp" alt="CSS Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 60%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/javaScript.webp" alt="JavaScript Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 50%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/GSAP.webp" alt="GSAP Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 45%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/MYSQL.webp" alt="MySQL Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 65%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/PHP.webp" alt="PHP Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 50%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/Rank_Math.webp" alt="Rank Math Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 90%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/LearnDash.webp" alt="LearnDash Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 85%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/Figma.webp" alt="Figma Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 80%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/Woocommerce.webp" alt="Woocommerce Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 80%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/Elementor.webp" alt="Elementor Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 75%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/WordPress.webp" alt="WordPress Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 25%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/Photoshop.webp" alt="Photoshop Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 90%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/Learnworld.webp" alt="Learnworld Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 60%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/Articulate.webp" alt="Articulate Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 30%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/illustrator.webp" alt="Illustrator Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 95%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/Powerpoint.webp" alt="Powerpoint Logo" />
+          </div>
+        </div>
+        <div class="skills-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"
+          style="--progress: 80%">
+          <div class="progress-circle">
+            <img src="./assets/images/skills_logo/excel.webp" alt="Excel Logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Certificates Section Start's Here -->
+    <section class="my-certificates-section container" id="certificates">
+      <h3>My Certificates</h3>
+      <div class="my-certificates-wrapper">
+        <div class="certificate-card">
+          <img src="./assets/images/icons/HTML.svg" alt="HTML Icon" />
+          <h4>HTML Certification</h4>
+          <p>
+            Certification covering the fundamentals of HTML, including page
+            structure, semantic elements, forms, and basic web standards.
+          </p>
+          <a href="./assets/certificates/HTML_certificate.pdf" download="./assets/certificates/HTML_certificate.pdf"
+            target="_blank" id="primary-button">View Certificate</a>
+        </div>
+        <div class="certificate-card">
+          <img src="./assets/images/icons/CSS.svg" alt="CSS Icon" />
+          <h4>CSS Certification</h4>
+          <p>
+            Certification focused on styling web pages using CSS, including
+            layouts, responsive design basics, and visual presentation.
+          </p>
+          <a href="./assets/certificates/CSS_certificate.pdf" download="./assets/certificates/CSS_certificate.pdf"
+            target="_blank" id="primary-button">View Certificate</a>
+        </div>
+        <div class="certificate-card">
+          <img src="./assets/images/icons/javaScript.svg" alt="javaScript Icon" />
+          <h4>JavaScript Certification</h4>
+          <p>
+            Certification covering JavaScript fundamentals such as variables,
+            functions, conditions, loops, and basic interactivity.
+          </p>
+          <a href="./assets//certificates/JavaScript_certificate.pdf"
+            download="./assets/certificates/JavaScript_certificate.pdf" target="_blank" id="primary-button">View
+            Certificate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Project Section Start's Here -->
+    <section class="my-projects-section container" id="projects">
+      <h2>My Latest Projects</h2>
+      <div class="my-projects-wrapper">
+        <div class="project-card">
+          <div>
+            <img src="./assets/images/projects/Fookhukka.com.webp" alt="Fookhukka website hero section image" />
+            <h4>Fookhukka</h4>
+            <p>
+              Discover premium, handcrafted hookahs designed to elevate every
+              moment.
+            </p>
+          </div>
+          <a href="https://fookhukka.com/" target="_blank" id="primary-button">View Project</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <img src="./assets/images/projects/SlideSkills.com.webp" alt="SlideSkills website hero section image" />
+            <h4>SlideSkills</h4>
+            <p>
+              Presentation design experts for financial & consulting firms.
+            </p>
+          </div>
+          <a href="https://slideskills.com/" target="_blank" id="primary-button">View Project</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <img src="./assets/images/projects/NYparley.com.webp" alt="NYparley website hero section image" />
+            <h4>NYparley</h4>
+            <p>Canadian-based Business consulting and digital design firm</p>
+          </div>
+          <a href="https://nyparley.com/" target="_blank" id="primary-button">View Project</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <img src="./assets/images/projects/Nfil3d.com.webp" alt="Nfil3d hero section image" />
+            <h4>Nfil3d</h4>
+            <p>N-Fil3D is a leading 3D printer manufacturer</p>
+          </div>
+          <a href="https://nfil3d.com/" target="_blank" id="primary-button">View Project</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <img src="./assets/images/projects/brainboltconsulting.com.webp"
+              alt="Brain Bolt Consulting hero section image" />
+            <h4>Brain Bolt Consulting</h4>
+            <p>
+              Brain Bolt Consulting provides strategic business solutions and
+              digital transformation services.
+            </p>
+          </div>
+          <a href="https://brainboltconsulting.com/" target="_blank" id="primary-button">View Project</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <img src="./assets/images/projects/staffdevelopmentsolutions.com.webp"
+              alt="Staff Development Solutions hero section image" />
+            <h4>Staff Development Solutions</h4>
+            <p>
+              Staff Development Solutions partners with your healthcare
+              organization to solve the challenges
+            </p>
+          </div>
+          <a href="https://staffdevelopmentsolutions.com/" target="_blank" id="primary-button">View Project</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <img src="./assets/images/projects/morestudios.in.webp" alt="Morestudios hero section image" />
+            <h4>Morestudios</h4>
+            <p>
+              MoreStudios is one of the top video production houses in India
+            </p>
+          </div>
+          <a href="https://morestudios.in/" target="_blank" id="primary-button">View Project</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <img src="./assets/images/projects/morelearningsolutions.com.webp"
+              alt="morelearningsolutions hero section image" />
+            <h4>Morelearningsolutions</h4>
+            <p>
+              MoreLearning combines deep expertise in learning and development
+            </p>
+          </div>
+          <a href="https://morelearningsolutions.com/" target="_blank" id="primary-button">View Project</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <img src="./assets/images/projects/moreslides.com.webp" alt="Moreslides hero section image" />
+            <h4>Moreslides</h4>
+            <p>Moreslides is a creative agency</p>
+          </div>
+          <a href="https://moreslides-v2.netlify.app/" target="_blank" id="primary-button">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section Start's Here -->
+    <section class="contact-me-section container" id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <input type="text" name="full_name" id="fullName" required placeholder="Nazrul Hasan" />
+        <input type="email" name="email" id="email" required placeholder="nazrulhasan866@gmail.com" />
+        <textarea type="text" name="message" id="message" placeholder="Hello, There How are you?"></textarea>
+        <button type="submit" id="formSubmit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer" class="container">
+    <div class="footer-content">
+      <div class="contact-details">
+        <a href="tel:9811808154">+919811808154</a>
+        <a href="mailto:nazrulhasan866@gmail.com">nazrulhasan866@gmail.com</a>
+      </div>
+      <div class="social-media-icons">
+        <a href="https://github.com/Apple197" target="_blank"><img src="./assets/images/icons/GitHub.svg" /></a>
+        <a href="https://www.linkedin.com/in/nazrul-hasan/" target="_blank"><img
+            src="./assets/images/icons/Linkedin.svg" /></a>
+        <a href="https://x.com/Nazrul_Hasan1" target="_blank"><img src="./assets/images/icons/X.svg" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="./assets/script.js" defer></script>
+</body>
+
 </html>

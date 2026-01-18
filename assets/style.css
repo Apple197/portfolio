@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #10101a;
-  --seconday-color: #5dff86;
+  --secondary-color: #5dff86;
   --tertiary-color: #ffffff;
   --font-family: "Poppins", sans-serif;
   --site-width: 1240px;
@@ -10,7 +10,41 @@
   --intersection-spacing: 60px;
   --transtions: all 0.6s ease;
   --progress: 0%;
+  --progress-track: rgba(255, 255, 255, 0.2);
+  --progress-track-hover: rgba(255, 255, 255, 0.25);
   --skill-progress-grid: 10rem;
+  --header-bg-color: rgba(16, 16, 26, 0.5);
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-theme {
+  --primary-color: #ffffff;
+  --tertiary-color: #10101a;
+  --header-bg-color: rgba(255, 255, 255, 0.5);
+  --progress-track: rgba(16, 16, 26, 0.2);
+  --progress-track-hover: rgba(16, 16, 26, 0.25);
+  --border-color: rgba(16, 16, 26, 0.1);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 body {
@@ -53,7 +87,7 @@ button {
 
 a {
   font-family: var(--font-family);
-  color: var(--seconday-color);
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -84,13 +118,17 @@ p {
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 0.05rem;
-  background-color: var(--seconday-color);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   padding-inline: 1.5rem;
   padding-block: 0.75rem;
   border-radius: 3rem;
   margin-block-start: 1.75rem;
   transition: var(--transtions);
+}
+
+.light-theme #primary-button {
+  color: var(--tertiary-color);
 }
 
 #primary-button:hover {
@@ -114,7 +152,7 @@ p {
   padding-block: 1.25rem;
   position: sticky;
   top: 0;
-  background-color: rgba(16, 16, 26, 0.5);
+  background-color: var(--header-bg-color);
   z-index: 10;
   backdrop-filter: blur(20px);
 }
@@ -122,6 +160,10 @@ p {
 #header .site-logo img {
   width: 6rem;
   height: auto;
+}
+
+.light-theme #header .site-logo img {
+  filter: invert(80%);
 }
 
 #header nav {
@@ -143,6 +185,11 @@ p {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+  transition: var(--transtions);
+}
+
+.light-theme #header nav .theme-mode img {
+  filter: invert(100%);
 }
 
 #header nav .theme-mode img:first-child {
@@ -152,6 +199,14 @@ p {
 #header nav .theme-mode img:last-child {
   width: 1.75rem;
   height: 1.75rem;
+}
+
+.light-theme #header nav .theme-mode img:first-child {
+  display: block;
+}
+
+.light-theme #header nav .theme-mode img:last-child {
+  display: none;
 }
 
 #header nav ul {
@@ -170,7 +225,11 @@ p {
 }
 
 #header nav ul li a:hover {
-  color: var(--seconday-color);
+  color: var(--secondary-color);
+}
+
+.light-theme #header nav ul li a:hover {
+  color: rgba(16, 16, 26, 0.5);
 }
 
 #header .hamburger-menu {
@@ -180,7 +239,14 @@ p {
 #header .hamburger-menu img {
   width: 1.5rem;
   height: auto;
-  transition: var(--transtions);
+}
+
+.light-theme #header .hamburger-menu img {
+  filter: invert(100%);
+}
+
+#header nav .theme-mode img:hover {
+  transform: scale(1.2);
 }
 
 /* Hero Section Style Start's Here */
@@ -238,6 +304,10 @@ p {
   width: 1.75rem;
   height: 1.75rem;
   transition: var(--transtions);
+}
+
+.light-theme .social-media-icons img {
+  filter: invert(100%);
 }
 
 .social-media-icons img:hover {
@@ -305,8 +375,8 @@ p {
   height: 100%;
   border-radius: 50%;
   background: conic-gradient(
-    var(--seconday-color) var(--progress),
-    rgba(255, 255, 255, 0.2) 0%
+    var(--secondary-color) var(--progress),
+    var(--progress-track) 0%
   );
   z-index: -1;
 }
@@ -326,9 +396,13 @@ p {
   object-fit: contain;
 }
 
+.light-theme .skills-progress-bar:nth-child(5) .progress-circle img {
+  filter: invert(100%);
+}
+
 .skills-progress-bar:hover {
   transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 12px 25px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 12px 25px var(--progress-track-hover);
 }
 
 /* My Certificates Section Style Start's Here */
@@ -351,7 +425,7 @@ p {
 }
 
 .my-certificates-wrapper .certificate-card {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
   padding: 2.25rem;
   border-radius: 0.95rem;
   transition: var(--transtions);
@@ -361,9 +435,9 @@ p {
 }
 
 .my-certificates-wrapper .certificate-card:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--border-color);
   transform: translateY(-6px) scale(1.025);
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px var(--border-color);
 }
 
 .my-certificates-wrapper .certificate-card h4 {
@@ -371,6 +445,10 @@ p {
   margin-block-start: 1.25rem;
   margin-block-end: 0.25rem;
   line-height: 1.2;
+}
+
+.light-theme .my-certificates-wrapper .certificate-card img {
+  filter: invert(100%);
 }
 
 /* My Project Section Style Start's Here */
@@ -394,7 +472,7 @@ p {
   flex-basis: 18rem;
   background-color: transparent;
   padding: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
   border-radius: 0.95rem;
   display: flex;
   flex-flow: column nowrap;
@@ -423,12 +501,16 @@ p {
 
 .project-card:hover {
   transform: translateY(-6px) scale(1.025);
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px var(--border-color);
+  background-color: var(--border-color);
 }
 
 .project-card:hover h4 {
-  color: var(--seconday-color);
+  color: var(--secondary-color);
+}
+
+.light-theme .project-card:hover h4 {
+  color: var(--tertiary-color);
 }
 
 .project-card:hover img {
@@ -454,7 +536,7 @@ p {
 .contact-me-section form input,
 .contact-me-section form textarea {
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
   border-radius: 0.9rem;
   outline: none;
   background-color: transparent;
@@ -493,11 +575,15 @@ p {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: var(--seconday-color);
+  background-color: var(--secondary-color);
   width: 0%;
   height: 100%;
   transition: var(--transtions);
   z-index: -1;
+}
+
+.light-theme .contact-me-section form #formSubmit:hover {
+  color: var(--tertiary-color);
 }
 
 .contact-me-section form #formSubmit:hover::before {
@@ -506,19 +592,19 @@ p {
 
 .contact-me-section form input:hover,
 .contact-me-section form textarea:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--border-color);
 }
 
 .contact-me-section form input:focus,
 .contact-me-section form textarea:focus {
-  border-color: var(--seconday-color);
+  border-color: var(--secondary-color);
 }
 
 /* Footer Section Style Start's Here */
 
 #footer .footer-content {
   padding-block: 1.75rem;
-  border-top: 0.0625rem solid rgba(255, 255, 255, 0.25);
+  border-top: 0.0625rem solid var(--progress-track-hover);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -544,14 +630,14 @@ p {
   display: block;
   color: var(--tertiary-color);
   text-decoration: none;
-  border: 0.0625rem solid rgba(255, 255, 255, 0.25);
+  border: 0.0625rem solid var(--progress-track-hover);
   padding: 0.5rem 1.25rem;
   border-radius: 1.5rem;
   transition: var(--transtions);
 }
 
 #footer .footer-content .contact-details a:hover {
-  border: 0.0625rem solid var(--seconday-color);
-  color: var(--seconday-color);
+  border: 0.0625rem solid var(--secondary-color);
+  color: var(--secondary-color);
   transform: translateY(-0.375rem);
 }
