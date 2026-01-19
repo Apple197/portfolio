@@ -27,9 +27,11 @@ const darkMode = () => {
   localStorage.setItem("theme-mode", "Dark");
 };
 
-if (isLightThemeActive === "Light") {
-  lightMode();
-}
+document.addEventListener("DOMContentLoaded", () => {
+  if (isLightThemeActive === "Light") {
+    lightMode();
+  }
+});
 
 themeToggleButtom.addEventListener("click", () => {
   isLightThemeActive = localStorage.getItem("theme-mode");
