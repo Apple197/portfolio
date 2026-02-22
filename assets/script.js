@@ -39,10 +39,10 @@ themeToggleButtom.addEventListener("click", () => {
 });
 
 // Form Handler Logic's Start Here
-form.addEventListener("submit", (event) => {
+/* form.addEventListener("submit", (event) => {
   event.preventDefault();
   event.target.reset();
-});
+}); */
 
 // Lenis smooth scroll Logic's Start Here
 const lenis = new Lenis();
